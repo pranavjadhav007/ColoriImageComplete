@@ -1,0 +1,124 @@
+ {% extends "base.html" %} {% block content %}
+
+<div class="topdiv">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="clogo" src="static\logoico.png" alt=""> &nbsp AI Trainer &nbsp &nbsp &nbsp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <h1 class="he">Convert B&W Images to <span class="colorful">Colorful</span></h1> <br><br>
+    <!-- <i> <h2>Exploring AI Limits</h2> </i>  -->
+</div>
+
+<br><br>
+
+<div class="thirddiv container">
+    <div class="thirddivin">
+        <b><h1>Select Image that you want to make Colorful</h1> </b><br>
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <br>
+            <label for="imageUpload1" class="upload-label">Select Image</label>
+            <input type="file" name="file" id="imageUpload1" accept=".png, .jpg, .jpeg">
+            <div class="image-section" style="display:none;">
+                <div class="img-preview container imgprv">
+                    <div id="imagePreview1"></div>
+                </div>
+            </div>
+        </form>
+
+        <div>
+            <button type="button" class="btn btn-dark" id="btn-predict" style="display: none;">Process Me</button>
+
+        </div>
+
+        <div class="loader" style="display:none;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<h3 id="result">
+    <span>Image with AI optimized Colors:</span> <br> <br>
+    <img src="" id="final_mask_image" alt="Final Mask Image" style="display: none;"> <br> <br>
+    <br>
+</h3>
+
+<br><br>
+
+<div class=" middiv">
+    <h2 class="mhead"><b>Feed Your Memories with Colors</b></h2>
+    <p class="mhead">Just upload the old memories and let us do the work for claryfing your dream.</p>
+    <div class="mouter">
+        <div class="minsideimg">
+            <img src="static/bw6.jpg" alt="">
+        </div>
+        <div class="minsideimg1">
+            <img class="arrowico" src="static/arrow.gif" alt="">
+        </div>
+        <div class="minsideimg">
+            <img src="static/colorized_image6.jpg" alt="">
+        </div>
+    </div> <br>
+    <div class="mouter">
+        <div class="minsideimg">
+            <img src="static/bw3.jpg" alt="">
+        </div>
+        <div class="minsideimg1">
+            <img class="arrowico" src="static/arrow.gif" alt="">
+        </div>
+        <div class="minsideimg">
+            <img src="static/colorized_image3.jpg" alt="">
+        </div>
+    </div> <br>
+    <div class="mouter">
+        <div class="minsideimg">
+            <img src="static/bw4.jpg" alt="">
+        </div>
+        <div class="minsideimg1">
+            <img class="arrowico" src="static/arrow.gif" alt="">
+        </div>
+        <div class="minsideimg">
+            <img src="static/colorized_image4.jpg" alt="">
+        </div>
+    </div> <br>
+    <div class="mouter">
+        <div class="minsideimg">
+            <img src="static/bw9.jpg" alt="">
+        </div>
+        <div class="minsideimg1">
+            <img class="arrowico" src="static/arrow.gif" alt="">
+        </div>
+        <div class="minsideimg">
+            <img src="static/bw7.jpg" alt="">
+        </div>
+    </div>
+
+</div>
+<br><br>
+
+<div class="made">
+    <img src="static/logoico.png" alt=""> <br>
+    <h1><b>Proving AI Services Free</b></h1>
+
+</div>
+
+
+<br><br><br> {% endblock %}

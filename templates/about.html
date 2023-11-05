@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="a_top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="clogo" src="static\logoico.png" alt=""> &nbsp AI Trainer &nbsp &nbsp &nbsp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>ABOUT US</h1>
+</div>
+<br><br>
+<div class="container about_mn">
+    <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+        <div class="col">
+            <div class="p-3">
+                <h1 class="i2Style">Website Info</h1> <br>
+                <h5>This website is made with custom Keras and Tensorflow algorithm. We use PTS integration for configuring the color matrix. You just need to upload the image through frontend. The AI algorithm will handle the damage along the the dip effect
+                    of image and color the Black and White image. We have focused on increasing the color contrast rather than frequency of colors. We have use Open CV for altering customized pixels.
+                </h5>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 ateam">
+                <h1 class="i2Style">Our Team</h1> <br>
+                <div class="container text-center about_adjs ">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <div class="p-3">
+                                <img class="about_img" src="static\jocker.jpg" alt=""> <br>
+                                <p>Jocker</p> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br><br>
+<div class="about_writeus container">
+    <h2 class="i2Style">Want to Contribute:</h2>
+    <h4>If you have interest and want to contribute in core concepts of AI like segmentation, interpolation, hull or concepts related to pixel optimization then write us at: &nbsp; <a href="mailto:jadhavpranav89@gmail.com">jadhavpranav89@gmail.com</a> </h4>
+
+</div>
+
+<br><br>
+
+
+<br><br><br> {% endblock %}
